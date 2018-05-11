@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+</script>
+<style type="text/css"></style>
+</head>
+<body>
+  <div class="move">
+    <header>
+
+        <p class="iconfont lef">&#xe60e;</p>
+        <ul>
+            <li class="active">Open</li>
+            <li>Close</li>
+        </ul>
+        <p class="iconfont rig">&#xe660;</p>
+    </header>
+    <div class="name">
+        <img src="imgs/head.png" class="img1">
+        <span>Martin Groove</span>
+        <p class="star">
+            <img src="imgs/star.png">175
+        </p>
+    </div>
+    <div class="cen">
+        <p class="eng">I can basejump from the shard! Can you?</p>
+        <div class="play">
+          <img src="imgs/jump.png">
+        </div>
+        <div class="time">01:11:03</div>
+        <div class="bot">
+          <p class="iconfont nt_one">&#xe605;&nbsp;7 people</p>
+          <p class="iconfont nt_three">&#xe6f0;&nbsp;Share</p>
+        </div>
+        <p class="nt_two">Accept</p>
+    </div>
+    <div class="er">
+      <div class="name">
+        <img src="imgs/head.png" class="img1">
+        <span>Martin Groove</span>
+        <p class="star">
+            <img src="imgs/star.png">175
+        </p>
+    </div>
+    <div class="cen">
+        <p class="eng">I can basejump from the shard! Can you?</p>
+        <div class="play">
+          <img src="imgs/bicycle.png">
+        </div>
+        <div class="time">01:11:03</div>
+        <div class="bot">
+          <p class="iconfont nt_one">&#xe605;&nbsp;7 people</p>
+          <p class="iconfont nt_three">&#xe6f0;&nbsp;Share</p>
+        </div>
+        <p class="nt_two">Accept</p>
+    </div>
+    </div>
+  </div>
+    <div class="box2">
+      <div class="im">
+        <img src="imgs/h.png">
+      </div>
+      <h1>Olia Gozha</h1>
+      <h2>BetRate:   <span class="one">116</span></h2>
+      <p class="zi"><a href="#">create challenge</a></p>
+      <div class="lie">
+      <ul>
+        <li><span class="pda"><a href="#" class="li1">Activity Feed</a></span></li>
+        <li><span class="pda"><a href="#" class="li2">My Challenges</a></span></li>
+        <li><span class="pda"><a href="#" class="li3">Discussions</a></span></li>
+        <li><span class="pda"><a href="#" class="li4">My Stats</a></span></li>
+        <li><span class="pda"><a href="#" class="li5">My Connections</a></span></li>
+        <li><span class="pda"><a href="#" class="li6">Best Bets</a></span></li>
+      </ul>
+    </div>
+    </div>
+    
+</body>
+</html>
